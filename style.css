@@ -9,23 +9,24 @@ body {
     width: 100%;
     margin: auto;
     text-align: center;
-    background-color: #2a8dcfec;
-    color: rgb(15, 15, 14);
+    background-color: rgb(15, 15, 14);
+    color:white;
+    height: 7vh;
   }
   .main_container{
+    height: 100vh;
     width: 100%;
-    margin: auto;
-    margin-bottom: 100px;
+    margin: 10px 0px 100px 0px;
     display: flex;
     justify-content: space-around;
     /* border: 2px solid rgb(78, 17, 175); */
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   }
 .image_container{
   width: 48%;
-  height: 100vh;
+  height: 100%;
   margin: auto;
   /* border: 2px solid red; */
-
 }
 .image_container img{
   width: 100%;
@@ -35,10 +36,10 @@ body {
 }
 .form_container{
   width: 48%;
-  height: 100vh;
+  height: 100%;
   margin: auto;
+  margin-top: 50px;
   /* border: 2px solid rgb(173, 163, 24); */
-
 }
 .form_container form{
   width: 100%;
@@ -50,13 +51,17 @@ body {
     /* border: 2px solid red; */
     width: 43%;
     height: 96vh;
-    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    
   }
   #display_data{
-    width: 100%;
+    width: 90%;
     /* margin-top: 100px; */
     margin: auto;
+    margin-top: 50px;
     /* padding: 20px; */
+  }
+  table{
+    width: 100%;
   }
  
   table,td,th{
@@ -67,13 +72,13 @@ body {
     border-collapse: collapse;
   }
   thead{
-    background-color: rgb(78, 17, 175);
-    color: white;
+    background-color: rgb(15, 15, 14);
+    color:white;
   }
  
 
   label {
-    color: rgb(100, 98, 98);
+    color: rgb(15, 15, 15);
     font-size: 20px;
   }
   input {
@@ -82,10 +87,11 @@ body {
     height: 25px;
     border-radius: 7px;
   }
+
  
   #btn,#btn1 {
-    background-color: #2a8dcfaf;
-    color: rgb(13, 14, 12);
+    background-color: rgb(15, 15, 14);
+    color:white;
     padding: 10px 60px;
     margin: auto;
     text-align: center;
@@ -102,8 +108,12 @@ body {
     display: grid;
     grid-template-columns: repeat(2,1fr);
   }
-  #btn:hover,#btn1:hover {
-    background-color: #2a8dcf;
+  #btn:hover{
+    background-color: rgb(12, 82, 12);
+    cursor: pointer;
+  }
+  #btn1:hover {
+    background-color: rgb(97, 17, 17);
     cursor: pointer;
   }
   select {
@@ -139,7 +149,9 @@ body {
     .main_container{
       width: 100%;
       margin: auto;
+      height: auto;
       display: block;
+      /* border: 2px solid rgb(29, 199, 128); */
     }
   .image_container{
     width: 100%;
@@ -159,51 +171,50 @@ body {
     margin: auto;
     
   }
-  table{
-    width: 90%;
-    margin: auto;
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+      display: block;
   }
 
-  table, thead, tbody, th, td, tr {
-    display: block;
-}
+  thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+  }
 
-thead tr {
-    display: none; /* Hide table headers on small screens */
-}
+  tr {
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+  }
 
-/* td {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 12px;
-    border: none;
-    border-bottom: 1px solid #c00c0c;
-    position: relative;
-    padding-left: 50%;
-    text-align: right; /* Align text to right */
+  /* td {
+      border: none;
+      position: relative;
+      padding-left: 50%;
+  } */
+
+  /* td:before {
+      position: absolute;
+      left: 6px;
+      content: attr(data-label);
+      font-weight: bold;
+  } */
+
+ #display_data{
+  border: 3px solid red;
+    width: 90%;
+    /* margin-top: 100px; */
+    margin: auto;
+    margin-top: 50px;
+    /* padding: 20px; */
+  }
 } 
 
 
-  @media screen and (min-width: 769px) and (max-width: 1080px) {
-    .heading {
-      width: 100%;
-      margin: auto;
-    }
-    form {
-      width: 100%;
-      margin: auto;
-      padding: 20px;
-    }
-    select {
-      width: 100%;
-      height: 25px;
-      border-radius: 5px;
-      border: none;
-    }
-    textarea {
-      width: 100%;
-      height: 70px;
-      border-radius: 5px;
-    }
-  }
+ 
+  
