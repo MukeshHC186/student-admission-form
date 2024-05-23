@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Registration Form </h1>
+    </div>
+<div class="main_container">
+  <div class="image_container">
+    <img src="https://images.unsplash.com/photo-1588026193712-31163b26c043?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+  </div>
+  <div class="form_container">
+    <form id="form">
+      <label for="">Name<span>*</span>:-</label><br /><input
+        type="text"
+        placeholder="Enter Your Name"
+        id="name"
+      /><br /><br />
+      <label for="">Mobile<span>*</span>:-</label><br /><input type="text" placeholder="Enter Your Mobile" id="mobile"/><br /><br />
+      <label for="">Email<span>*</span>:-</label><br /><input type="text" placeholder="Enter Your Email" id="email"/><br /><br />
+      <label for="">City<span>*</span>:-<br />
+        <select id="city">
+          <option>-----Select------</option>
+          <option>Jaipur</option>
+          <option>Jodhpur</option>
+          <option>Jaislmer</option>
+          <option>Alwar</option>
+        </select></label><br /><br />
+
+        <label for="">Course<span>*</span>:-<br />
+            <select id="course">
+              <option>-----Select------</option>
+              <option>HTML</option>
+              <option>CSS</option>
+              <option>JAVA</option>
+              <option>REACT</option>
+            </select></label><br /><br />
+
+            <label for="">State<span>*</span>:-<br />
+                <select id="state">
+                  <option>-----Select------</option>
+                  <option>Rajasthan</option>
+                  <option>U.P</option>
+                  <option>Harayana</option>
+                  <option>Punjab</option>
+                </select></label><br /><br />
+
+      <label for="">Address<span>*</span>:-</label><br />
+      <textarea name="" id="address"></textarea><br /><br />
+      <div class="btn">
+        <button id="btn">Submit</button>
+        <button id="btn1">Resat</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+   
+
+
+<hr>
+
+    <div id="display_data">
+
+    </div>
+  </body>
+  <script>
+    let arr = JSON.parse(localStorage.getItem("userData"))||[];
+    let form = document.getElementById("form");
+    function getData(event) {
+      event.preventDefault();
+      let obj = {
+        name: document.getElementById("name").value,
+        mobile: document.getElementById("mobile").value,
+        email: document.getElementById("email").value,
+        city: document.getElementById("city").value,
+        course: document.getElementById("course").value,
+        state: document.getElementById("state").value,
+        address: document.getElementById("address").value,
+      };
+      arr.push(obj);
+      localStorage.setItem("userData",JSON.stringify(arr))
+    //   console.log(arr);
+      form.reset();
+    }
+    let btn = document.getElementById("btn");
+    btn.addEventListener("click", getData);
+
+    function displayData(data){
+      let table=document.createElement("table")
+      let thead=document.createElement("thead")
+      let tbody=document.createElement("tbody")
+      let tr=document.createElement("tr")
+      let th=document.createElement("th")
+      th.innerText="Name"
+      let th1=document.createElement("th")
+      th1.innerText="Mobile"
+      let th2=document.createElement("th")
+      th2.innerText="Email"
+      let th3=document.createElement("th")
+      th3.innerText="City"
+      let th4=document.createElement("th")
+      th4.innerText="Course"
+      let th5=document.createElement("th")
+      th5.innerText="State"
+      let th6=document.createElement("th")
+      th6.innerText="Address"
+
+      tr.append(th,th1,th2,th3,th4,th5,th6)
+      thead.append(tr)
+      table.append(thead)
+
+
+      data.forEach(ele=>{
+        let display_data=document.getElementById("display_data")
+        let tr1=document.createElement("tr")
+        let td=document.createElement("td")
+        td.innerText=ele.name
+        let td1=document.createElement("td")
+        td1.innerText=ele.mobile
+        let td2=document.createElement("td")
+        td2.innerText=ele.email
+        let td3=document.createElement("td")
+        td3.innerText=ele.city
+        let td4=document.createElement("td")
+        td4.innerText=ele.course
+        let td5=document.createElement("td")
+        td5.innerText=ele.state
+        let td6=document.createElement("td")
+        td6.innerText=ele.address
+
+        tr1.append(td,td1,td2,td3,td4,td5,td6)
+      tbody.append(tr1)
+      table.append(tbody)
+      display_data.append(table)
+      })
+    }
+    displayData(arr)
+  </script>
+</html>
