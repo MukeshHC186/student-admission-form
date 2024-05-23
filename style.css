@@ -169,7 +169,7 @@ body {
     /* border: 2px solid rgb(41, 86, 184); */
     width: 90%;
     margin: auto;
-    
+    padding: 5px;
   }
 
   table,
@@ -188,8 +188,8 @@ body {
   }
 
   tr {
-      margin-bottom: 20px;
-      border: 1px solid #ddd;
+      margin-bottom: 25px;
+      /* border: 1px solid #ddd; */
   }
 
   /* td {
@@ -206,8 +206,8 @@ body {
   } */
 
  #display_data{
-  border: 3px solid red;
-    width: 90%;
+  /* border: 3px solid red; */
+    width: 98%;
     /* margin-top: 100px; */
     margin: auto;
     margin-top: 50px;
