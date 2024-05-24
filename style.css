@@ -120,7 +120,7 @@ body {
   table,td,th{
     border: 1px solid gray;
     padding: 5px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     margin: auto;
     border-collapse: collapse;
   }
@@ -165,17 +165,11 @@ body {
       display: block;
   }
 
-  thead tr {
-      position: absolute;
-      top: -9999px;
-      left: -9999px;
-  }
-
   tr {
       margin-bottom: 25px;
   }
  #display_data{
-    width: 98%;
+    width: 99%;
     margin: auto;
     margin-top: 50px;
   }
