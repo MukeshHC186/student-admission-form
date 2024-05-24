@@ -14,16 +14,16 @@ body {
     height: 7vh;
   }
   .main_container{
-    height: 100vh;
+    height: 80vh;
     width: 100%;
-    margin: 10px 0px 100px 0px;
+    /* margin: 10px 0px 100px 0px; */
     display: flex;
     justify-content: space-around;
     /* border: 2px solid rgb(78, 17, 175); */
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   }
 .image_container{
-  width: 48%;
+  width: 50%;
   height: 100%;
   margin: auto;
   /* border: 2px solid red; */
@@ -35,60 +35,51 @@ body {
 
 }
 .form_container{
-  width: 48%;
+  width: 50%;
   height: 100%;
   margin: auto;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   /* border: 2px solid rgb(173, 163, 24); */
 }
-.form_container form{
-  width: 100%;
-  height: 100%;
 
-
-}
-  form {
-    /* border: 2px solid red; */
-    width: 43%;
-    height: 96vh;
-    
-  }
-  #display_data{
-    width: 90%;
-    /* margin-top: 100px; */
-    margin: auto;
-    margin-top: 50px;
-    /* padding: 20px; */
-  }
-  table{
+   form {
+     /* border: 2px solid red; */
     width: 100%;
-  }
- 
-  table,td,th{
-    border: 1px solid gray;
-    padding: 5px;
-    border-radius: 5px;
-    margin: auto;
-    border-collapse: collapse;
-  }
-  thead{
-    background-color: rgb(15, 15, 14);
-    color:white;
-  }
- 
-
+    padding: 10px;
+    
+  } 
+  
   label {
     color: rgb(15, 15, 15);
     font-size: 20px;
   }
   input {
+    display: inline-block;
+    box-sizing: border-box;
     color: gray;
-    width: 96%;
+    width: 97%;
     height: 25px;
-    border-radius: 7px;
+    border-radius: 5px;
   }
-
- 
+  select {
+    color: gray;
+    width: 97%;
+    height: 25px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  textarea {
+    width: 97%;
+    height: 100px;
+    border-radius: 5px;
+  }
+  label:hover,input:hover,select:hover,textarea:hover{
+    border-color: blue;
+  }
+  .btn{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
   #btn,#btn1 {
     background-color: rgb(15, 15, 14);
     color:white;
@@ -102,12 +93,7 @@ body {
       /* border: 2px solid red; */
 
   }
-  .btn{
-    /* display: flex;*/
-    /* margin-top: 98px;  */
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-  }
+  
   #btn:hover{
     background-color: rgb(12, 82, 12);
     cursor: pointer;
@@ -116,42 +102,40 @@ body {
     background-color: rgb(97, 17, 17);
     cursor: pointer;
   }
-  select {
-    color: gray;
-    width: 97%;
-    height: 25px;
-    border-radius: 5px;
-    text-align: center;
-  }
-  textarea {
-    width: 96%;
-    height: 100px;
-    border-radius: 5px;
-  }
   
-  label:hover,input:hover,select:hover,textarea:hover{
-    border-color: blue;
-  }
   span{
     color: red;
   }
+  #display_data{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  table{
+    width: 100%;
+  }
+ tr:nth-child(odd){
+  background-color: rgba(180, 179, 129, 0.356);
+ }
+  table,td,th{
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 5px;
+    margin: auto;
+    border-collapse: collapse;
+  }
+  thead{
+    background-color: rgb(15, 15, 14);
+    color:white;
+  }
+ 
   @media screen and (min-width: 200px) and (max-width: 768px) {
-    .heading {
-      width: 100%;
-      margin: auto;
-    }
-    form {
-      /* border: 2px solid red; */
-      width: 90%;
-      margin: auto;
-      /* padding: 15px; */
-    }
+    
     .main_container{
       width: 100%;
       margin: auto;
       height: auto;
       display: block;
-      /* border: 2px solid rgb(29, 199, 128); */
     }
   .image_container{
     width: 100%;
@@ -160,13 +144,13 @@ body {
   }
  
   .form_container{
-    width: 98%;
-      /* border: 2px solid red; */
+    width: 100%;
       margin: auto;
-   
+  }
+  form{
+    padding: 4px;
   }
   .btn{
-    /* border: 2px solid rgb(41, 86, 184); */
     width: 90%;
     margin: auto;
     padding: 5px;
@@ -189,29 +173,11 @@ body {
 
   tr {
       margin-bottom: 25px;
-      /* border: 1px solid #ddd; */
   }
-
-  /* td {
-      border: none;
-      position: relative;
-      padding-left: 50%;
-  } */
-
-  /* td:before {
-      position: absolute;
-      left: 6px;
-      content: attr(data-label);
-      font-weight: bold;
-  } */
-
  #display_data{
-  /* border: 3px solid red; */
     width: 98%;
-    /* margin-top: 100px; */
     margin: auto;
     margin-top: 50px;
-    /* padding: 20px; */
   }
 } 
 
