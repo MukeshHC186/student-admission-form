@@ -15,10 +15,11 @@ body {
   }
   .main_container{
     height: 80vh;
-    width: 100%;
+    width: 97.5%;
+    margin: auto;
     /* margin: 10px 0px 100px 0px; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     /* border: 2px solid rgb(78, 17, 175); */
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   }
@@ -58,13 +59,13 @@ body {
     box-sizing: border-box;
     color: gray;
     width: 97%;
-    height: 25px;
+    height: 35px;
     border-radius: 5px;
   }
   select {
     color: gray;
     width: 97%;
-    height: 25px;
+    height: 35px;
     border-radius: 5px;
     text-align: center;
   }
