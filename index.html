@@ -4,103 +4,159 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Admission Details</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <nav class="navbar">
+      <div class="navbar-brand">MySite</div>
+      <div class="navbar-toggle" id="navbar-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
+      <ul class="navbar-links" id="navbar-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="./cart.html" target="_blank">Cart</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+  </nav>
     <div class="heading">
-      <h1><span>*</span> Registration Form <span>*</span> </h1>
+      <h1><span>*</span> Registration Form <span>*</span></h1>
     </div>
-<div class="main_container">
-  <div class="image_container">
-    <img src="https://images.unsplash.com/photo-1588026193712-31163b26c043?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-  </div>
-  <div class="form_container">
-    <form id="form">
-      <label for="">Name<span>*</span>:-</label><br /><input
-        type="text"
-        placeholder="Enter Your Name"
-        id="name"
-      /><br /><br />
-      <label for="">Mobile<span>*</span>:-</label><br /><input type="text"  placeholder="Enter Your Mobile" id="mobile" /><br /><br />
-      <label for="">Email<span>*</span>:-</label><br /><input type="email" placeholder="Enter Your Email" id="email" /><br /><br />
-      <label for="">City<span>*</span>:-<br />
-        <select id="city">
-          <option>-----Select------</option>
-          <option>Jaipur</option>
-          <option>Jodhpur</option>
-          <option>Jaislmer</option>
-          <option>Alwar</option>
-        </select></label><br /><br />
+    <div class="main_container">
+      <div class="image_container">
+        <img
+          src="https://images.unsplash.com/photo-1588026193712-31163b26c043?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+      </div>
+      <div class="form_container">
+        <form id="form">
+          <label for="">Name<span>*</span>:-</label><br /><input
+            type="text"
+            placeholder="Enter Your Name"
+            id="name"
+          /><br /><br />
+          <label for="">Mobile<span>*</span>:-</label><br /><input
+            type="text"
+            placeholder="Enter Your Mobile"
+            id="mobile"
+          /><br /><br />
+          <label for="">Email<span>*</span>:-</label><br /><input
+            type="email"
+            placeholder="Enter Your Email"
+            id="email"
+          /><br /><br />
+          <label for=""
+            >City<span>*</span>:-<br />
+            <select id="city">
+              <option>-----Select------</option>
+              <option>Jaipur</option>
+              <option>Jodhpur</option>
+              <option>Jaislmer</option>
+              <option>Alwar</option>
+            </select></label
+          ><br /><br />
 
-        <label for="">Course<span>*</span>:-<br />
+          <label for=""
+            >Course<span>*</span>:-<br />
             <select id="course">
               <option>-----Select------</option>
               <option>HTML</option>
               <option>CSS</option>
               <option>JAVA</option>
               <option>REACT</option>
-            </select></label><br /><br />
+            </select></label
+          ><br /><br />
 
-            <label for="">State<span>*</span>:-<br />
-                <select id="state">
-                  <option>-----Select------</option>
-                  <option>Rajasthan</option>
-                  <option>U.P</option>
-                  <option>Harayana</option>
-                  <option>Punjab</option>
-                </select></label><br /><br />
+          <label for=""
+            >State<span>*</span>:-<br />
+            <select id="state">
+              <option>-----Select------</option>
+              <option>Rajasthan</option>
+              <option>U.P</option>
+              <option>Harayana</option>
+              <option>Punjab</option>
+            </select></label
+          ><br /><br />
 
-      <label for="">Address<span>*</span>:-</label><br />
-      <textarea name="" id="address"></textarea><br /><br />
-      <div class="btn">
-        <button id="btn">Submit</button>
-        <button id="btn1">Resat</button>
+          <label for="">Address<span>*</span>:-</label><br />
+          <textarea name="" id="address"></textarea><br /><br />
+          <div class="btn">
+            <button id="btn">Submit</button>
+            <button id="btn1">Resat</button>
+          </div>
+        </form>
       </div>
-    </form>
-  </div>
-</div>
-
-
-   
-
-
-
-
-    <div id="display_data">
-
     </div>
+
+    <div id="display_data"></div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-container">
+          <div class="footer-section about">
+              <h2>About Us</h2>
+              <p>We are a team of passionate individuals working to make the web a better place.</p>
+          </div>
+          <div class="footer-section links">
+              <h2>Quick Links</h2>
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </div>
+          <div class="footer-section social">
+              <h2>Follow Us</h2>
+              <div class="social-links">
+                  <a href="#"><img src="path-to-facebook-icon" alt="Facebook"></a>
+                  <a href="#"><img src="path-to-twitter-icon" alt="Twitter"></a>
+                  <a href="#"><img src="path-to-instagram-icon" alt="Instagram"></a>
+                  <a href="#"><img src="path-to-linkedin-icon" alt="LinkedIn"></a>
+              </div>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2024 Your Company. All rights reserved.</p>
+      </div>
+  </footer>
   </body>
+
   <script>
-    let arr = JSON.parse(localStorage.getItem("userData"))||[];
-    let form = document.getElementById("form");
-    function getData(event) {
-      event.preventDefault();
-      let obj = {
-        name: document.getElementById("name").value,
-        mobile: document.getElementById("mobile").value,
-        email: document.getElementById("email").value,
-        city: document.getElementById("city").value,
-        course: document.getElementById("course").value,
-        state: document.getElementById("state").value,
-        address: document.getElementById("address").value,
-      };
-      arr.push(obj);
-      localStorage.setItem("userData",JSON.stringify(arr))
+    let arr=JSON.parse(localStorage.getItem("user"))||[];
+    let form=document.getElementById("form")
+   function getData(e){
+    e.preventDefault()
+    let obj={
+        name:document.getElementById("name").value,
+        mobile:document.getElementById("mobile").value,
+        email:document.getElementById("email").value,
+        city:document.getElementById("city").value,
+        course:document.getElementById("course").value,
+        state:document.getElementById("state").value,
+        address:document.getElementById("address").value
+      }
+      arr.push(obj)
+      localStorage.setItem("user",JSON.stringify(arr))
       displayData(arr)
-
-    //   console.log(arr);
-      form.reset();
-
-    }
-    let btn = document.getElementById("btn");
-    btn.addEventListener("click", getData);
+      // console.log(arr)
+      form.reset()
+   }
+   let btn=document.getElementById("btn")
+    btn.addEventListener("click",getData)
 
     function displayData(data){
       display_data.innerHTML=null
+     
       let table=document.createElement("table")
       let thead=document.createElement("thead")
       let tbody=document.createElement("tbody")
       let tr=document.createElement("tr")
+      let th0=document.createElement("th")
+      th0.innerText="S.no."
       let th=document.createElement("th")
       th.innerText="Name"
       let th1=document.createElement("th")
@@ -115,15 +171,20 @@
       th5.innerText="State"
       let th6=document.createElement("th")
       th6.innerText="Address"
+      let th7=document.createElement("th")
+      th7.innerText="Action"
+       
 
-      tr.append(th,th1,th2,th3,th4,th5,th6)
+      tr.append(th0,th,th1,th2,th3,th4,th5,th6,th7)
       thead.append(tr)
       table.append(thead)
 
-
       data.forEach(ele=>{
+        
         let display_data=document.getElementById("display_data")
-        let tr1=document.createElement("tr")
+        let tr=document.createElement("tr")
+        let td0=document.createElement("td")
+        td0.innerText=data.indexOf(ele)+1
         let td=document.createElement("td")
         td.innerText=ele.name
         let td1=document.createElement("td")
@@ -139,12 +200,27 @@
         let td6=document.createElement("td")
         td6.innerText=ele.address
 
-        tr1.append(td,td1,td2,td3,td4,td5,td6)
-      tbody.append(tr1)
-      table.append(tbody)
-      display_data.append(table)
+        let btn=document.createElement("button")
+        btn.innerText="Add to cart"
+        btn.addEventListener("click",()=>{
+        addtocart("favdata",ele)
+        })
+        tr.append(td0,td,td1,td2,td3,td4,td5,td6,btn)
+        tbody.append(tr)
+        table.append(tbody)
+        display_data.append(table)
       })
     }
     displayData(arr)
+
+    // -------------add to cart function----------
+   function addtocart(key,value){
+    let cart=JSON.parse(localStorage.getItem("favdata"))||[]
+    cart.push(value)
+    localStorage.setItem("favdata",JSON.stringify(cart))
+    alert("Add to cart")
+   }
+
   </script>
-</html>
+
+  </html>
