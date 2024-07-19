@@ -65,20 +65,15 @@ body,* {
   height: 7vh;
 }
 .main_container{
-  /* height: 80vh; */
   width: 97.5%;
   margin: auto;
-  /* margin: 10px 0px 100px 0px; */
   display: flex;
   justify-content: space-between;
-  /* border: 2px solid rgb(78, 17, 175); */
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .image_container{
 width: 50%;
-/* height: 100%; */
 margin: auto;
-/* border: 2px solid red; */
 }
 .image_container img{
 width: 100%;
@@ -88,14 +83,10 @@ object-fit: cover;
 }
 .form_container{
 width: 50%;
-/* height: 100%; */
 margin: auto;
-/* margin-top: 50px; */
-/* border: 2px solid rgb(173, 163, 24); */
 }
 
  form {
-   /* border: 2px solid red; */
   width: 100%;
   padding: 15px;
   
@@ -112,7 +103,6 @@ input {
   color: gray;
   width: 97%;
   padding: 12px;
-  /* height: 35px; */
   border-radius: 5px;
 }
 select {
